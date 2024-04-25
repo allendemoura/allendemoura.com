@@ -42,7 +42,7 @@
         font-size: 20px;
       }
 
-      .container img {
+      .container .avatar {
         margin-bottom: 8px;
         overflow: hidden;
         border-radius: 50%;
@@ -58,15 +58,22 @@
         padding-right: 6px;
       }
 
-      .container a:hover {
+      .container a:not(.badge):hover {
         text-decoration: underline;
+      }
+
+      .container .badge {
+        height: 96px;
+        width: 96px;
+        margin-top: 18px;
+        display: block;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div>
-        <img src="img/headshot.jpg" />
+        <img class="avatar" src="img/headshot.jpg" />
         <h1>Allen DeMoura</h1>
         <p>
           Passionate developer with an inquisitive mind, on a transformative journey into cybersecurity. I'm inspired by the art of ethical hacking - dissecting systems to fortify them. Join me in the pursuit of pushing security boundaries and staying one step ahead in the ever evolving landscape of Information Security.
@@ -74,7 +81,9 @@
         <div>
           <a href="https://www.linkedin.com/in/allendemoura/">LinkedIn</a>
           <a href="https://github.com/allendemoura">GitHub</a>
+          <a href="https://medium.com/@senderend">Blog</a>
         </div>
+        <a class="badge" href="https://www.credential.net/b643bdf5-cc2c-4996-8c1d-ebeb804e7e2d"><img src="img/OSCP_badge.png" /></a>
       </div>
     </div>
   </body>
